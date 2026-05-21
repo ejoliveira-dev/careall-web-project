@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care.All</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f8f1f1;
+      color:#2b2b2b;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    header{
+      width:100%;
+      background:#7b2d2d;
+      padding:18px 7%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      color:white;
+      font-size:40px;
+      font-weight:700;
+      text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    nav{
+      display:flex;
+      gap:30px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      font-weight:500;
+    }
+
+    .search{
+      width:250px;
+      padding:12px 18px;
+      border:none;
+      border-radius:30px;
+      outline:none;
+    }
+
+    .menu-hamburguer{
+        color: #ffffff;
+    }
+
+    .sobre{
+      min-height:60vh;
+      background:
+      linear-gradient(#d75c5cac, #D75D5C),
+      url('images/familia.webp');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:justify;
+      padding:30px;
+
+    }
+
+    .sobre-content{
+      max-width:700px;
+      color:white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .sobre-textos {
+        flex: 1;
+    }
+    
+    .sobre h1{
+      font-size:45px;
+      margin-bottom:25px;
+    }
+
+    .sobre-textos p{
+      font-size:20px;
+      line-height:1.7;
+      margin-bottom:35px;
+    }
+    
+    .sobre-content img {
+        max-width:  350px;
+        width: 100%;
+        height: auto;
+        border-radius: 20%;
+    }
+
+    footer{
+      background:#7b2d2d;
+      color:white;
+      margin-top:100px;
+      padding:70px 8%;
+    }
+
+    .footer-grid{
+      display:flex;
+      justify-content:space-between;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .footer-column h3{
+      margin-bottom:20px;
+      font-size:24px;
+    }
+
+    .footer-column p{
+      margin-bottom:12px;
+      opacity:0.9;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        cursor: pointer;
+        border-radius: 25%;
+    }
+
+    .copy{
+      margin-top:50px;
+      text-align:center;
+      opacity:0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">
+    <div class="logo">Care.All</div>
+  </a>
+
+  <nav>
+    <a href="sobre.html">Sobre</a>
+    <a href="hospedagens.html">Hospedagens</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <input type="text" class="search" placeholder="Buscar hospedagem...">
+
+  <div class="menu-hamburguer" id="menu-hamburguer">☰</div>
+</header>
+
+<main>
+    <section class="sobre">
+        <div class="sobre-content">
+            
+            <div class="sobre-textos">
+                <h1>Quem Somos?</h1>
+                <p>A Care.All é uma startup de impacto social e uma     iniciativa sem fins lucrativos que nasceu da necessidade urgente de oferecer dignidade e acolhimento a pacientes e seus acompanhantes que precisam se deslocar de locais distantes busca de tratamentos médicos especializados.</p>
+                <p>Com a missão de promover cuidado, acolhimento e dignidade, visamos conectar famílias a espaços seguros por meio de uma rede solidária, oferecendo hospedagem segura, de forma gratuita ou com custo simbólico, e reduzindo o impacto financeiro e emocional na vida de famílias passando por um período sensível e garantindo conforto durante todo o processo de cura.</p>
+            </div>
+
+            <img src="imagens/logo.png" alt="logo_care_all">
+        </div>
+    </section>
+
+</main>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div class="footer-column">
+      <h3>Sobre</h3>
+      <p>Quem somos</p>
+      <p>Nossa missão</p>
+      <p>Impacto social</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Ajuda</h3>
+      <p>Central de suporte</p>
+      <p>Perguntas frequentes</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contato</h3>
+      <p>contato@careall.com</p>
+      <p>(81) 99999-9999</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Siga-nos</h3>
+      <div class="social-icons">
+        <img src="imagens/youtube.webp" alt="youtube_logo">
+        <img src="imagens/facebook.png" alt="facebook_logo">
+        <img src="imagens/instagram.webp" alt="instagram_logo"></p>
+       </div>
+    </div>
+
+  </div>
+
+  <div class="copy">
+    © 2025 Care.All — Todos os direitos reservados
+  </div>
+
+</footer>
+
+</body>
+</html>

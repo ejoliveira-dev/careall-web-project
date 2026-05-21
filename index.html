@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care.All</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f8f1f1;
+      color:#2b2b2b;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    header{
+      width:100%;
+      background:#7b2d2d;
+      padding:18px 7%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      color:white;
+      font-size: 40px;
+      font-weight:700;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    nav{
+      display:flex;
+      gap:30px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      font-weight:500;
+    }
+
+    .search{
+      width:200px;
+      padding:12px 18px;
+      border:none;
+      border-radius:30px;
+      outline:none;
+    }
+
+    .menu-hamburguer{
+        color: #ffffff;
+    }
+
+    .hero{
+      min-height:60vh;
+      background:
+      linear-gradient(#d75c5cac, #D75D5C),
+      url('images/familia.webp');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+
+    }
+
+    .hero-content{
+      max-width:850px;
+      color:white;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:25px;
+    }
+
+    .hero p{
+      font-size:22px;
+      line-height:1.7;
+      margin-bottom:35px;
+    }
+
+    .hero button{
+      padding:16px 40px;
+      border:none;
+      border-radius:14px;
+      background:white;
+      color:#7b2d2d;
+      font-size:18px;
+      font-weight:600;
+      cursor:pointer;
+    }
+
+    .cards{
+      width:90%;
+      margin:80px auto;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      width:340px;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card-content h3{
+      color:#7b2d2d;
+      margin-bottom:15px;
+      font-size:26px;
+    }
+
+    .acolhimento{
+      width:90%;
+      margin:100px auto;
+      display:flex;
+      gap:40px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .acolhimento img{
+      flex:1;
+      min-width:320px;
+      border-radius:20px;
+      height:450px;
+      object-fit:cover;
+      max-width: 30%;
+      height: auto;
+    }
+
+    .acolhimento-text{
+      flex:1;
+      min-width:320px;
+    }
+
+    .acolhimento-text h2{
+      font-size:48px;
+      color:#7b2d2d;
+      margin-bottom:25px;
+    }
+
+    .acolhimento-text p{
+      line-height:1.9;
+      font-size:18px;
+      
+    }
+
+    .hospedagens{
+      width:90%;
+      margin:100px auto;
+    }
+
+    .hospedagens h2{
+      text-align:center;
+      font-size:45px;
+      color:#7b2d2d;
+      margin-bottom:40px;
+    }
+
+    .hospedagem-grid{
+      display:flex;
+      gap:30px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .room-card{
+      width:360px;
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .room-card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .room-content{
+      padding:25px;
+    }
+
+    .maps-btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 22px;
+      background:#7b2d2d;
+      color:white;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:500;
+    }
+
+    footer{
+      background:#7b2d2d;
+      color:white;
+      margin-top:100px;
+      padding:70px 8%;
+    }
+
+    .footer-grid{
+      display:flex;
+      justify-content:space-between;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .footer-column h3{
+      margin-bottom:20px;
+      font-size:24px;
+    }
+
+    .footer-column p{
+      margin-bottom:12px;
+      opacity:0.9;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        cursor: pointer;
+        border-radius: 25%;
+    }
+
+    .copy{
+      margin-top:50px;
+      text-align:center;
+      opacity:0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">
+        <div class="logo">Care.All</div> 
+    </a>
+
+  <nav>
+    <a href="sobre.html">Sobre</a>
+    <a href="hospedagens.html">Hospedagens</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <input type="text" class="search" placeholder="Buscar hospedagem...">
+
+  <div class="menu-hamburguer" id="menu-hamburguer">☰</div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+        <h1>Seu lar enquanto cuida de quem importa</h1>
+        <p>Conectamos pacientes e acompanhantes a hospedagens acolhedoras próximas aos hospitais.</p>
+        <button>Apoie Agora</button>
+    </div>
+    </section>
+
+  <section class="cards"> 
+    <div class="card">
+      <img src="imagens/pacientes.png">
+      <div class="card-content">
+        <h3>Para pacientes</h3>
+        <p>Hospedagens seguras para tratamentos médicos longe de casa.</p>
+      </div>
+  </div>
+
+  <div class="card">
+    <img src="imagens/acompanhantes.png">
+    <div class="card-content">
+      <h3>Para acompanhantes</h3>
+      <p>Apoio para quem acompanha familiares em momentos delicados.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="imagens/voluntarios.png">
+    <div class="card-content">
+      <h3>Para voluntários</h3>
+      <p>Transformando vidas através da solidariedade.</p>
+    </div>
+  </div>
+    </section>
+
+    <section class="acolhimento">   
+  <img src="imagens/logo.png">
+
+  <div class="acolhimento-text">
+    <h2>Mais que hospedagem.</h2>
+    <p>
+      A Care.All nasceu para ser uma ponte entre cuidado e dignidade.
+      Nosso propósito é reduzir o impacto emocional e financeiro de famílias
+      que precisam viajar para tratamentos médicos.
+    </p>
+  </div>
+</section>
+
+ <section class="hospedagens">   
+    <h2>Hospedagens Recomendadas</h2>
+
+    <div class="hospedagem-grid">
+
+    <div class="room-card">
+      <img src="imagens/mapa.png">
+      <div class="room-content">
+        <h3>Buscar pelo Maps</h3>
+        <p>Encontre hospedagens próximas aos hospitais em tempo real.</p>
+
+        <a href="https://www.google.com/maps/search/hospedagens+próximas+a+hospitais/"
+           target="_blank"
+           class="maps-btn">
+           Buscar Agora
+        </a>
+      </div>
+    </div>
+
+    <div class="room-card">
+      <img src="imagens/casa_interno">
+      <div class="room-content">
+        <h3>Casa Florença</h3>
+        <p>Parceira da nossa iniciativa, oferece acolhimento seguro e humano, além de ambiente familiar preparado para acolher pessoas em tratamento e seus entes queridos.</p>
+      </div>
+    </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div class="footer-column">
+      <h3>Sobre</h3>
+      <p>Quem somos</p>
+      <p>Nossa missão</p>
+      <p>Impacto social</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Ajuda</h3>
+      <p>Central de suporte</p>
+      <p>Perguntas frequentes</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contato</h3>
+      <p>contato@careall.com</p>
+      <p>(81) 99999-9999</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Siga-nos</h3>
+      <div class="social-icons">
+        <img src="imagens/youtube.webp" alt="youtube_logo">
+        <img src="imagens/facebook.png" alt="facebook_logo">
+        <img src="imagens/instagram.webp" alt="instagram_logo"></p>
+       </div>
+    </div>
+
+  </div>
+
+  <div class="copy">
+    © 2025 Care.All — Todos os direitos reservados
+  </div>
+
+</footer>
+
+</body>
+</html>
