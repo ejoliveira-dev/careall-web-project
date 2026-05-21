@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,66 +12,216 @@
 
 <body>
 
-<header>
-  <a href="index.html">
-    <div class="logo">Care.All</div>
-  </a>
+  <header>
+    <a href="index.html">
+      <div class="logo">Care.All</div>
+    </a>
 
-  <nav>
-    <a href="sobre.html">Sobre</a>
-    <a href="hospedagens.html">Hospedagens</a>
-    <a href="projetos.html">Projetos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
+    <nav>
+      <a href="sobre.html">Sobre</a>
+      <a href="hospedagens.html">Hospedagens</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
 
-  <input type="text" class="search" placeholder="Buscar hospedagem...">
+    <input type="text" class="search" placeholder="Buscar hospedagem...">
 
-  <div class="menu-hamburguer" id="menu-hamburguer">☰</div>
-</header>
+    <div class="menu-hamburguer" id="menu-hamburguer">☰</div>
+  </header>
 
-<main>
-    
-</main>
+  <main>
+    <section class="contato">
+      <div class="contato-content">
 
-<footer>
+        <div class="contato-painel">
+          <div class="contato-esquerda">
+            <h2>Contato</h2>
 
-  <div class="footer-grid">
+            <form class="contato-form" id="formularioContato">
+              <div class="input-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" required>
+              </div>
 
-    <div class="footer-column">
-      <h3>Sobre</h3>
-      <p>Quem somos</p>
-      <p>Nossa missão</p>
-      <p>Impacto social</p>
+              <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" required>
+              </div>
+
+              <div class="input-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="4" required></textarea>
+                <!-- esse <textarea> é um campo de texto grande; ou seja, cria uma caixa de texto. o "rows" são as quantidades de linhas visíveis -->
+              </div>
+
+              <button type="submit" class="button-enviar">Enviar</button>
+            </form>
+          </div>
+
+          <div class="contato-info-card">
+            <div class="card-topo">
+              <h3>Entre em contato conosco</h3>
+              <h4>Adoraríamos ouvir você!</h4>
+            </div>
+
+            <div class="card-corpo">
+              <div class="info-item">
+                <span class="icone">
+                  <img src="img/contato-icones/email.png" alt="Ícone do email">
+                </span>
+                <p>contato@careall.com</p>
+              </div>
+
+              <div class="info-item">
+                <span class="icone">
+                  <img src="img/contato-icones/phone.png" alt="Ícone de telefone">
+                </span>
+                <p>+55 (81) 99999-9999</p>
+              </div>
+
+              <div class="info-item">
+                <span class="icone">
+                  <img src="img/contato-icones/insta.png" alt="Ícone do instagram">
+                </span>
+                <p>@care.all</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-faq-secao">
+          <div class="faq-header">
+            <h2>Perguntas Frequentes</h2>
+            <p>Tire suas dúvidas sobre como funciona o acolhimento, critérios de segurança e como fazer parte da nossa rede solidária.</p>
+          </div>
+         
+          <div class="faq-grid">
+
+            <div class="faq-coluna">
+              <h3> Pacientes e Acompanhantes</h3>
+
+              <details>
+                <summary>Quem tem direito a utilizar as hospedagens do Care.All?</summary>
+                <p>Nosso acolhimento é destinado a quem precisam enfrentar longas jornadas para tratamentos na Região Metropolina do Recife. A plataforma atende tanto o paciente que viaja sozinho quanto o acompanhante que não possuem infraestrutura para permanecer nos hospitais, oferecendo dignidade, privacidade e suporte a todos. </p>
+              </details>
+
+              <details>
+                <summary>O serviço de hospedagem é totalmente gratuito?</summary>
+                <p>Sim, o foco primário da nossa iniciativa é garantir o acesso totalmente gratuito. Porém, como o Care.All opera sem fins lucrativos, nossa  sustentabilidade vem de parcerias corporativas, doações e voluntariado, em alguns casos específicos pode haver uma taxa mínima e simbólica apenas para manutenção tecnológica e operacional do sistema. </p>
+              </details>
+
+              <details>
+                <summary>Posso levar mais de um acompanhante?</summary>
+                <p>Sim! Um grande diferencial da nossa iniciativa é que, diferentemente de algumas casas de apoio tradicionais que limitam a permanência a apenas um acompanhante, o Care.All permite que você utilize os filtros no aplicativo ou site para buscar estadias que acomodem mais de uma pessoa além do paciente.</p>
+              </details>
+
+              <details>
+                <summary>Como faço para buscar e escolher uma hospedagem?</summary>
+                <p>Pelo nosso site ou aplicativo, você consegue buscar hospedagens próximas aos hospitais e usar filtro por tipo de estadia, localização, tempo de permanência, necessidade de acessibilidade, entre outras ferramentas que ajudam a escolher a hospedagem que melhor se adapta à sua necessidade.</p>
+              </details>
+
+              <details>
+                <summary>O que acontece se houver algum imprevisto na estadia?</summary>
+                <p>Nós oferecemos um suporte humanizado 24 horas pronto para lidar com essas situações. Caso ocorra algum problema, basta acessar a aba de "Contato" do site ou aplicativo e utilizar um dos canais disponiveis para nos contatar. Se for necessário, nossa equipe realizará a realocação imediata do paciente e do acompanhante para um local seguro.</p>
+              </details>
+            </div>
+
+            <div class="faq-coluna">
+              <h3> Anfitriões e Voluntários</h3>
+
+              <details>
+                <summary>Como a Care.All garante que o processo é seguro?</summary>
+                <p>A segurança é nossa prioridade absoluta. Todos os anfitriões, voluntários e locais cadastrados passam por uma verificação rigorosa, incluindo envio de documentação, análise de perfil e entrevistas, além de seguirem regras estritas de convivência.</p>
+              </details>
+
+              <details>
+                <summary>Quem pode se tornar um anfitrião parceiro?</summary>
+                <p>Moradores voluntários que tenham um espaço disponível, além de instituições locais, igrejas, ONGs e casas de apoio que queiram multiplicar seu impacto social e ajudar a acolher quem precisa.</p>
+              </details>
+
+              <details>
+                <summary>Como o projeto se sustenta se não tem fins lucrativos?</summary>
+                <p>Nossa sustentabilidade financeira vem de patrocínios corporativos, parcerias institucionais com entidades públicas/privadas, campanhas de financiamento coletivo e publicidade solidária na plataforma.</p>
+              </details>
+
+              <details>
+                <summary>Como se tornar voluntário?</summary>
+                <p>Os interessados em se engajar na nossa iniciativa como voluntários devem acessar a aba "Projetos" do nosso site ou aplicativo. Lá, você encontrar a seção de voluntariado, que detalha os projetos fixos e em andamento disponíveis para a nossa comunidade de apoio.</p>
+              </details>
+
+              <details>
+                <summary>O projeto pretende expandir para além de Recife?</summary>
+                <p>Sim! Entretanto, atualmente estamos na Fase Piloto, focada em consolidar a nossa rede em Recife. Como somos uma iniciativa em crescimento, a Fase 2 do projeto consistirá na replicação modular desse modelo em outras capitais que enfrentam o mesmo desafio logístico e social.</p>
+              </details>
+
+            </div>
+          </div>
+      
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div class="footer-column">
+        <h3>Sobre</h3>
+        <p>Quem somos</p>
+        <p>Nossa missão</p>
+        <p>Impacto social</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Ajuda</h3>
+        <p>Central de suporte</p>
+        <p>Perguntas frequentes</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <p>contato@careall.com</p>
+        <p>(81) 99999-9999</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <div class="social-icons">
+          <img src="img/footer/youtube.png" alt="youtube_logo">
+          <img src="img/footer/facebook.png" alt="facebook_logo">
+          <img src="img/footer/instagram.png" alt="instagram_logo"></p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="footer-column">
-      <h3>Ajuda</h3>
-      <p>Central de suporte</p>
-      <p>Perguntas frequentes</p>
+    <div class="copy">
+      © 2025 Care.All — Todos os direitos reservados
     </div>
 
-    <div class="footer-column">
-      <h3>Contato</h3>
-      <p>contato@careall.com</p>
-      <p>(81) 99999-9999</p>
-    </div>
+  </footer>
 
-    <div class="footer-column">
-      <h3>Siga-nos</h3>
-      <div class="social-icons">
-        <img src="img/footer/youtube.png" alt="youtube_logo">
-        <img src="img/footer/facebook.png" alt="facebook_logo">
-        <img src="img/footer/instagram.png" alt="instagram_logo"></p>
-       </div>
-    </div>
+  <div id="modalSucesso" class="modal-container">
+    <div class="modal-conteudo">
 
+      <div class="modal-titulo-container">
+        <span class="modal-icone">
+          <img src="img/contato-icones/heart.png" alt="Ícone de Coração">
+        </span>
+        <h3>Mensagem enviada!</h3>
+      </div>
+      
+      <p>Obrigada por nos contatar, nossa equipe trabalhará para respondê-lo(a) em breve.</p>
+
+      <button id="buttonFecharModal" class="button-fechar"> Ok, fechar</button>
+
+    </div>
   </div>
 
-  <div class="copy">
-    © 2025 Care.All — Todos os direitos reservados
-  </div>
-
-</footer>
-
+  <script src="script.js"></script>
 </body>
+
 </html>
