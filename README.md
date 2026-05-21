@@ -17,7 +17,6 @@
 - Seções Sobre, Hospedagens, Projetos, Contato adicionadas.
 - Footer estruturado.
 - Reponsividade em desenvolvimento.
-- Estilização utilizando CSS interno.
 
 
 ## Tecnologias utilizadas
