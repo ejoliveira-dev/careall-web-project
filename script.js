@@ -1,3 +1,5 @@
+// parte da seção contatos
+
 const formulario = document.getElementById('formularioContato');
 const modal = document.getElementById('modalSucesso');
 const buttonFechar = document.getElementById('buttonFecharModal');
@@ -14,3 +16,5 @@ formulario.addEventListener('submit', function(event) { // "escuta" quando algu�
 buttonFechar.addEventListener('click', function() {
     modal.classList.remove('ativo'); // removendo o "ativo".
 })
+
+// parte da seção projetos
