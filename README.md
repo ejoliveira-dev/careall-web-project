@@ -30,3 +30,5 @@
 - Éveny Oliveira.
 - Jairiane Costa.
 - Trícia Moisés.
+
+> Este projeto foi desenvolvido para fins acadêmicos. Algumas imagens utilizadas pertencem aos seus respectivos autores e foram empregadas apenas para composição visual e demonstração da interface.

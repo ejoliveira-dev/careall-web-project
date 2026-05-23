@@ -802,6 +802,16 @@ footer {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
+/*parte do conteúdo.*/
+
+.projetos-conteudo-wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    z-index: 20;
+}
+
 .projeto-aba-bloco {
     display: none;
     opacity: 0;
@@ -817,4 +827,230 @@ footer {
     transform: translateY(0);
 }
 
+.projeto-layout-topo {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: stretch;
+}
 
+/* banner do conteúdo */
+
+.projeto-banner {
+    background: white;
+    border-radius: 28px;
+    padding: 40px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.projeto-banner::before{ /* o círculozinho. */
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: rgba(134, 25, 25, 0.432);
+    border-radius: 50%;
+    top: -80px;
+    right: -80px;
+}
+
+.banner-info{
+    position: relative;
+    z-index: 2;
+}
+
+.banner-info h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.banner-info p{
+    color: #3f3f3f;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.button-banner{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #7b2d2d;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: .3s ease;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.button-banner:hover{
+    transform: translateY(-3px);
+    background: #5c2020;
+}
+
+/* o calendário do conteúdo */
+
+.projeto-calendario h3{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.calendario-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.calendario-item{
+    background: #fafafa;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendario-item:hover{
+    transform: translateX(5px);
+    background: #f5f5f5;
+}
+
+.calendario-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+}
+
+.cor-vinho::before{
+    background: #7b2d2d;
+}
+
+.cor-cinza::before{
+    background: #555;
+}
+
+.cor-ouro::before{
+    background: #d6a33e;
+}
+
+.cal-data{
+    min-width: 65px;
+    text-align: center;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.cal-data span{
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.cal-info h4{
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.cal-info p{
+    color: #666;
+    font-size: .92rem;
+}
+
+/*a vitrinezinha*/
+
+.projeto-vitrine-secao{
+    margin-top: 50px;
+}
+
+.projeto-vitrine-secao h3{
+    font-size: 2rem;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+    padding-left: 8px;
+    font-weight: 700;
+}
+
+.projeto-vitrine-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+}
+
+.projeto-card{
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+    transition: .35s ease;
+}
+
+.projeto-card:hover{
+    transform: translateY(-10px);
+}
+
+.projeto-card img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-detalhes{
+    padding: 24px;
+}
+
+.card-detalhes h4{
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.card-detalhes p{
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button-card{
+    border: none;
+    background: #7b2d2d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.button-card:hover{
+    background: #5c2020;
+}
+
+@media(max-width: 950px){
+    .projeto-layout-topo{
+        grid-template-columns: 1fr;
+    }
+
+    .projetos-abas-menu{
+        flex-wrap: wrap;
+    }
+
+    .aba-button{
+        width: 170px;
+    }
+}
