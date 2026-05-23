@@ -12,18 +12,31 @@
 
 ## Funcionalidades
 
-- Página inicial.
-- Sistema de navegação entre páginas.
-- Seções Sobre, Hospedagens, Projetos, Contato adicionadas.
+### Estrutura 
+- Header fixo.
+- Menu hambúrguer responsivo.
 - Footer estruturado.
-- Reponsividade em desenvolvimento.
+- Hero section da página principal com animação de digitação.
+- Sistema de navegação entre seções/páginas.
 
+### Seções Implementadas
+- Seção inicial (home).
+- Seção Sobre. 
+- Seção Hospedagens (em desenvolvimento).
+- Seção Projetos.
+- Seção Contato.
+
+### Interatividade e UX
+- Menu hambúrguer animado.
+- Dark/Light mode toggle.
+- Cards com efeitos hover.
+- Animações CSS com @keyframes.
 
 ## Tecnologias utilizadas
 
 - HTML5.
 - CSS3.
-
+- JavaScript.
 
 ## Equipe
 
