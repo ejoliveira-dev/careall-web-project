@@ -62,4 +62,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// hero com digitação
 
+const text = "Seu lar enquanto cuida de quem importa";
+const typingElement = document.getElementById("typing-text");
+
+let index = 0;
+
+function typeEffect() {
+    if (!typingElement) return;
+
+    if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 60);
+    }
+}
+
+window.addEventListener("load", typeEffect);
+
+// menu hamburguer
+
+const menu = document.getElementById("menu-hamburguer");
+const menuUser = document.getElementById("menu-user");
+
+menu.addEventListener("click", () => {
+    menuUser.classList.toggle("ativo");
+    menu.classList.toggle("ativo");
+});
+
+// dark/light mode
+
+const toggleTheme = document.getElementById("toggle-theme");
+
+// aplica tema salvo ao carregar a página
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+}
+
+if (toggleTheme) {
+    toggleTheme.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        // salva estado atual
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+}
