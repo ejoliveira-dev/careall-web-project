@@ -5,9 +5,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*---- SCROLL SUAVE ----*/
 html {
     scroll-behavior: smooth;
 }
+/*----------------------*/
 
 body {
     background: #f8f1f1;
@@ -62,6 +64,7 @@ nav a {
     outline: none;
 }
 
+/*---- MENU HAMBÚRGUER ANIMADO ----*/
 .menu-hamburguer {
     color: #ffffff;
     display: flex;
@@ -91,6 +94,8 @@ nav a {
     75%  { transform: translateX(-1px); }
     100% { transform: translateX(0); }
 }
+
+/*----------------------*/
 
 .menu-hamburguer.ativo span:nth-child(1) {
     animation-delay: 0s;
@@ -176,6 +181,7 @@ body.dark {
     color: #eaeaea;
 }
 
+/*---- DARK/LIGHT MODE ----*/
 body.dark header {
     background: #250202;
 }
@@ -193,6 +199,7 @@ body.dark .hero h1,
 body.dark .hero p {
     color: white;
 }
+/*----------------------*/
 
 body.dark .menu-user a,
 body.dark .menu-user button {
@@ -502,7 +509,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    text-align: left;
     padding: 30px;
     box-shadow: 0 2px 10px #7b2d2d72;
 }
@@ -734,12 +741,14 @@ footer {
     text-align: center;
 }
 
+/*---- GRID RESPONSIVO 1 ----*/
 .faq-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
 }
+/*----------------------*/
 
 .faq-coluna h3 {
     color: #1a1a1a;
@@ -809,6 +818,7 @@ footer {
     color: white;
 }
 
+/*---- ANIMAÇÕES COM CSS ----*/
 .faq-coluna p {
     margin-top: 15px;
     color: #555;
@@ -828,6 +838,7 @@ footer {
         transform: translateY(0);
     }
 }
+/*----------------------*/
 
 .modal-container {
     position: fixed;
@@ -931,10 +942,12 @@ footer {
         margin-bottom: 30px;
     }
 
+    /*---- GRID RESPONSIVO 2 ----*/
     .faq-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+    /*----------------------*/
 }
 
 .projetos-hero {
@@ -1004,6 +1017,7 @@ footer {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+
 .aba-icone {
     display: flex;
     flex-direction: column;
@@ -1024,10 +1038,12 @@ footer {
     text-align: center;
 }
 
+/*---- hOVER ----*/
 .aba-button:hover {
     transform: translateY(-5px) scale(1.03);
     background: #712929;
 }
+/*----------------------*/
 
 .aba-button.ativo {
     background: #7b2d2d;
@@ -1287,4 +1303,31 @@ footer {
     .aba-button {
         width: 170px;
     }
+}
+
+@media (max-width: 768px) {
+
+    .sobre-content {
+        flex-direction: column;
+        text-align: left;
+        gap: 30px;
+    }
+
+    .sobre-textos {
+        width: 100%;
+    }
+
+    .sobre h1 {
+        font-size: 3rem;
+    }
+
+    .sobre-textos p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .sobre-content img {
+        max-width: 260px;
+    }
+
 }
