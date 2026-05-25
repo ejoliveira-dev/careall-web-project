@@ -311,6 +311,10 @@ body.dark .input-group textarea {
     !important; 
 }
 
+body.dark .calendario-item h4 {
+    color: #541010 ;
+}
+
 .hero p {
     font-size: 22px;
     line-height: 1.7;
