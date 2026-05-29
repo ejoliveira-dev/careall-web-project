@@ -39,7 +39,7 @@
       <button id="toggle-theme">Dark/Light</button>
       <a href="#">Sair</a>
     </div>
-    
+
   </header>
 
   <main>
@@ -51,71 +51,114 @@
       </div>
     </section>
 
-    <section class="cards">
-      <div class="card">
-        <img src="img/pacientes.png">
-        <div class="card-content">
-          <h3>Para pacientes</h3>
-          <p>Hospedagens seguras para tratamentos médicos longe de casa.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/acompanhantes.png">
-        <div class="card-content">
-          <h3>Para acompanhantes</h3>
-          <p>Apoio para quem acompanha familiares em momentos delicados.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/voluntarios.png">
-        <div class="card-content">
-          <h3>Para voluntários</h3>
-          <p>Transformando vidas através da solidariedade.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="acolhimento">
-      <img src="img/logo.png">
-
-      <div class="acolhimento-text">
-        <h2>Mais que hospedagem.</h2>
+    <section class="publicos-home">
+      <div class="section-header">
+        <span>Como podemos ajudar?</span>
+        <h2>Escolha o tipo de apoio que você procura</h2>
         <p>
-          A Care.All nasceu para ser uma ponte entre cuidado e dignidade.
-          Nosso propósito é reduzir o impacto emocional e financeiro de famílias
-          que precisam viajar para tratamentos médicos.
+          A Care.All organiza caminhos diferentes para pacientes, acompanhantes e pessoas
+          que desejam fazer parte da rede solidária.
         </p>
       </div>
+
+      <div class="cards">
+        <a class="card" href="projetos.html?aba=pacientes">
+          <img src="img/home/pacientes.png" alt="Paciente">
+          <div class="card-content">
+            <h3>Para pacientes</h3>
+            <p>Encontre apoio, orientação e hospedagens próximas aos centros médicos.</p>
+          </div>
+        </a>
+
+        <a class="card" href="projetos.html?aba=acompanhantes">
+          <img src="img/home/acompanhantes.png" alt="Acompanhante">
+          <div class="card-content">
+            <h3>Para acompanhantes</h3>
+            <p>Acesse iniciativas pensadas para quem cuida e também precisa de acolhimento.</p>
+          </div>
+        </a>
+
+        <a class="card" href="projetos.html?aba=voluntarios">
+          <img src="img/home/voluntarios.png" alt="Voluntários">
+          <div class="card-content">
+            <h3>Para voluntários</h3>
+            <p>Conheça formas de participar da rede e transformar solidariedade em ação.</p>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <section class="hospedagens">
-      <h2>Hospedagens Recomendadas</h2>
+    <section class="home-impacto">
+      <div class="home-impacto-texto">
+        <span>Por que isso importa?</span>
+        <h2>O cuidado não começa apenas dentro do hospital.</h2>
+        <p>
+          Para muitas famílias, buscar tratamento médico significa enfrentar viagens longas,
+          custos inesperados e a insegurança de não saber onde ficar. A Care.All nasce para
+          reduzir essa distância entre necessidade, acolhimento e dignidade.
+        </p>
+        <a href="sobre.html">Conheça nossa história</a>
+      </div>
 
-      <div class="hospedagem-grid">
-
-        <div class="room-card">
-          <img src="img/mapa.png">
-          <div class="room-content">
-            <h3>Buscar pelo Maps</h3>
-            <p>Encontre hospedagens próximas aos hospitais em tempo real.</p>
-
-            <a href="https://www.google.com/maps/search/hospedagens+próximas+a+hospitais/" target="_blank"
-              class="maps-btn">
-              Buscar Agora
-            </a>
-          </div>
+      <div class="home-impacto-cards">
+        <div>
+          <strong>🏠 Hospedagem segura</strong>
+          <p>Espaços pensados para pacientes e acompanhantes permanecerem com mais tranquilidade.</p>
         </div>
 
-        <div class="room-card">
-          <img src="img/casa_interno.png">
-          <div class="room-content">
-            <h3>Casa Florença</h3>
-            <p>Parceira da nossa iniciativa, oferece acolhimento seguro e humano, além de ambiente familiar preparado
-              para acolher pessoas em tratamento e seus entes queridos.</p>
-          </div>
+        <div>
+          <strong>🤝 Rede solidária</strong>
+          <p>Conexão entre famílias, parceiros, voluntários e instituições de apoio.</p>
         </div>
+
+        <div>
+          <strong>💜 Apoio humanizado</strong>
+          <p>Uma proposta voltada não só para localização, mas também para cuidado e acolhimento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-recursos">
+      <div class="section-header">
+        <span>Dentro da plataforma</span>
+        <h2>O que você encontra na Care.All</h2>
+        <p>
+          A plataforma reúne caminhos de apoio para quem busca hospedagem,
+          orientação ou formas de contribuir com a rede solidária.
+        </p>
+      </div>
+
+      <div class="home-recursos-grid">
+
+        <article class="home-recurso-card">
+          <div class="recurso-icone">🏠</div>
+          <h3>Hospedagens solidárias</h3>
+          <p>
+            Consulte opções de acolhimento organizadas por necessidade, localização
+            e tipo de hospedagem.
+          </p>
+          <a href="hospedagens.html">Ver hospedagens</a>
+        </article>
+
+        <article class="home-recurso-card">
+          <div class="recurso-icone">💜</div>
+          <h3>Projetos sociais</h3>
+          <p>
+            Conheça iniciativas voltadas para pacientes, acompanhantes e voluntários
+            que fazem parte da rede Care.All.
+          </p>
+          <a href="projetos.html">Conhecer projetos</a>
+        </article>
+
+        <article class="home-recurso-card">
+          <div class="recurso-icone">🤝</div>
+          <h3>Contato e orientação</h3>
+          <p>
+            Encontre canais para tirar dúvidas, buscar informações e conhecer formas
+            de participar da iniciativa.
+          </p>
+          <a href="contato.html">Entrar em contato</a>
+        </article>
 
       </div>
     </section>

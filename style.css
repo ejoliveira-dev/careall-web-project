@@ -337,6 +337,232 @@ body.dark .calendario-item h4 {
     cursor: pointer;
 }
 
+.publicos-home {
+    width: 90%;
+    max-width: 1180px;
+    margin: 80px auto 100px auto;
+    padding: 55px 45px;
+    border-radius: 34px;
+    background:
+        linear-gradient(135deg, rgba(123, 45, 45, 0.10), rgba(215, 93, 92, 0.06));
+}
+
+.publicos-home .section-header {
+    margin-bottom: 38px;
+}
+
+
+
+.publicos-home .section-header h2 {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 42px auto;
+}
+
+.section-header span {
+    display: inline-block;
+    background: #f3dede;
+    color: #7b2d2d;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.section-header h2 {
+    color: #7b2d2d;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.publicos-home .cards {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body.dark .section-header span {
+    background: #341010;
+    color: #eaeaea;
+}
+
+body.dark .section-header h2,
+body.dark .section-header p {
+    color: #eaeaea;
+}
+
+.home-impacto {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.home-impacto-texto {
+    background: white;
+    border-radius: 30px;
+    padding: 48px;
+    box-shadow: 0 10px 28px rgba(123, 45, 45, 0.10);
+    border: 1px solid rgba(123, 45, 45, 0.08);
+}
+
+.home-impacto-texto span {
+    display: inline-block;
+    background: #f3dede;
+    color: #7b2d2d;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.home-impacto-texto h2 {
+    color: #7b2d2d;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.home-impacto-texto p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.home-impacto-texto a {
+    display: inline-block;
+    background: #7b2d2d;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.home-impacto-texto a:hover {
+    transform: translateY(-3px);
+    background: #5c2020;
+}
+
+.home-impacto-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-impacto-cards div {
+    background: #7b2d2d;
+    color: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 24px rgba(123, 45, 45, 0.16);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.home-impacto-cards div::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    top: -45px;
+    right: -35px;
+}
+
+.home-impacto-cards div:hover {
+    transform: translateX(6px);
+    background: #8a3333;
+}
+
+.home-impacto-cards strong {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-impacto-cards p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+
+@media (max-width: 900px) {
+    .home-impacto {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-impacto {
+        width: 88%;
+        margin: 70px auto;
+    }
+
+    .home-impacto-texto {
+        padding: 34px 24px;
+        border-radius: 26px;
+    }
+
+    .home-impacto-texto h2 {
+        font-size: 2rem;
+    }
+
+    .home-impacto-texto p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .home-impacto-texto a {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+    }
+
+    .home-impacto-cards div {
+        padding: 26px 24px;
+        border-radius: 22px;
+    }
+
+    .home-impacto-cards div:hover {
+        transform: translateY(-4px);
+    }
+
+    .home-impacto-cards strong {
+        font-size: 1.15rem;
+    }
+
+    .home-impacto-cards p {
+        font-size: 0.92rem;
+    }
+}
+
 .cards {
     width: 90%;
     margin: 80px auto;
@@ -352,6 +578,15 @@ body.dark .calendario-item h4 {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
 }
 
 .card img {
@@ -368,42 +603,6 @@ body.dark .calendario-item h4 {
     color: #7b2d2d;
     margin-bottom: 15px;
     font-size: 26px;
-}
-
-.acolhimento {
-    width: 90%;
-    margin: 100px auto;
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.acolhimento img {
-    flex: 1;
-    min-width: 320px;
-    border-radius: 20px;
-    height: 450px;
-    object-fit: cover;
-    max-width: 30%;
-    height: auto;
-}
-
-.acolhimento-text {
-    flex: 1;
-    min-width: 320px;
-}
-
-.acolhimento-text h2 {
-    font-size: 48px;
-    color: #7b2d2d;
-    margin-bottom: 25px;
-}
-
-.acolhimento-text p {
-    line-height: 1.9;
-    font-size: 18px;
-
 }
 
 .hospedagens {
@@ -600,7 +799,7 @@ footer {
 .sobre-bloco.imagem-fundo {
     background:
         linear-gradient(rgba(123, 45, 45, 0.86), rgba(215, 93, 92, 0.75)),
-        url("img/casa_interno.png");
+        url("img/hospedagens-icones/familia/casa-familia-1.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -1638,6 +1837,140 @@ footer {
 
 }
 
+/* modal da parte de projetos */
+
+.modal-projeto {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+.modal-projeto.ativo {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-projeto-conteudo {
+    width: 100%;
+    max-width: 560px;
+    background: white;
+    border-radius: 26px;
+    padding: 38px;
+    position: relative;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+    animation: modalProjetoEntrada 0.3s ease;
+}
+
+@keyframes modalProjetoEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.fechar-modal-projeto {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #f3dede;
+    color: #7b2d2d;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.fechar-modal-projeto:hover {
+    background: #7b2d2d;
+    color: white;
+}
+
+#modal-categoria {
+    display: inline-block;
+    background: #7b2d2d;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+#modal-titulo {
+    color: #7b2d2d;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    padding-right: 30px;
+}
+
+#modal-descricao {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 24px;
+}
+
+.modal-impacto {
+    background: #f8f1f1;
+    border-radius: 18px;
+    padding: 20px;
+    border-left: 5px solid #7b2d2d;
+}
+
+.modal-impacto strong {
+    display: block;
+    color: #7b2d2d;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.modal-impacto p {
+    color: #444;
+    line-height: 1.65;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .modal-projeto {
+        padding: 18px;
+    }
+
+    .modal-projeto-conteudo {
+        padding: 32px 24px;
+        border-radius: 24px;
+    }
+
+    #modal-titulo {
+        font-size: 1.55rem;
+    }
+
+    #modal-descricao,
+    .modal-impacto p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+
 /* CSS DA SEÇÃO 'HOSPEDAGENS'*/
 
 .pagina-hospedagens header .search {
@@ -2101,6 +2434,30 @@ body.dark .tipo-hospedagem {
     display: block;
 }
 
+.mapa-link {
+    display: block;
+    width: fit-content;
+    margin: 18px auto 0 auto;
+    background: #7b2d2d;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.mapa-link:hover {
+    background: #5c2020;
+    transform: translateY(-2px);
+}
+
+body.dark .mapa-link {
+    background: #5c2020;
+    color: white;
+}
+
 .filtros-rapidos {
     width: 90%;
     margin: 0 auto 90px auto;
@@ -2448,5 +2805,353 @@ body.dark .hospedagens-hero-texto p {
 
     .impacto-numeros span {
         font-size: 0.95rem;
+    }
+}
+
+/* ajustando o tamanho dos cards da home */
+.publicos-home {
+    max-width: 1050px;
+    padding: 48px 38px;
+}
+
+.publicos-home .cards {
+    max-width: 930px;
+    margin: 0 auto;
+    gap: 22px;
+}
+
+.publicos-home .card {
+    max-width: 290px;
+    min-height: auto;
+}
+
+.publicos-home .card img {
+    height: 165px;
+}
+
+.publicos-home .card-content {
+    padding: 22px 20px;
+}
+
+.publicos-home .card-content h3 {
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+.publicos-home .card-content p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.home-recursos {
+    width: 90%;
+    max-width: 1180px;
+    margin: 90px auto 110px auto;
+}
+
+.home-recursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.home-recurso-card {
+    background: white;
+    border-radius: 28px;
+    padding: 34px 30px;
+    box-shadow: 0 10px 26px rgba(123, 45, 45, 0.10);
+    border: 1px solid rgba(123, 45, 45, 0.08);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-recurso-card::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(123, 45, 45, 0.07);
+    top: -50px;
+    right: -45px;
+}
+
+.home-recurso-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 32px rgba(123, 45, 45, 0.16);
+}
+
+.recurso-icone {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: #7b2d2d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-recurso-card h3 {
+    color: #7b2d2d;
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-recurso-card p {
+    color: #555;
+    font-size: 0.96rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-recurso-card a {
+    display: inline-block;
+    background: #7b2d2d;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.home-recurso-card a:hover {
+    background: #5c2020;
+    transform: translateY(-2px);
+}
+
+body.dark .home-recurso-card {
+    background: #341010;
+    border-color: #5c2020;
+    color: #eaeaea;
+}
+
+body.dark .home-recurso-card::before {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+body.dark .home-recurso-card h3,
+body.dark .home-recurso-card p {
+    color: #eaeaea;
+}
+
+body.dark .recurso-icone {
+    background: #5c2020;
+}
+
+body.dark .home-recurso-card a {
+    background: #7b2d2d;
+}
+
+@media (max-width: 950px) {
+    .home-recursos-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-recursos {
+        width: 88%;
+        margin: 70px auto;
+    }
+
+    .home-recurso-card {
+        padding: 28px 24px;
+        border-radius: 24px;
+    }
+
+    .recurso-icone {
+        width: 52px;
+        height: 52px;
+        font-size: 1.4rem;
+    }
+
+    .home-recurso-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .home-recurso-card p {
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    .home-recurso-card a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.home-recurso-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-recurso-card p {
+    flex-grow: 1;
+}
+
+.home-recurso-card a {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.modal-acao {
+    display: inline-block;
+    border: none;
+    background: #7b2d2d;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 14px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.3s ease;
+    margin-top: 24px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.modal-acao:hover {
+    background: #5c2020;
+    transform: translateY(-2px);
+}
+
+body.dark .modal-acao {
+    background: #7b2d2d;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .modal-acao {
+        width: 100%;
+    }
+}
+
+/* menu ativo/scroll spy adaptado */
+
+header nav a.ativo {
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+}
+
+header nav a.ativo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 999px;
+}
+
+body.dark header nav a.ativo::after {
+    background: #eaeaea;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #d75d5c;
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+/* ajustes finais de responsividade*/
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* melhora clique em mobile */
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .contato-esquerda h2 {
+        font-size: 2.4rem;
+        line-height: 1.15;
+    }
+
+    .publicos-home {
+        width: 88%;
+        padding: 38px 22px;
+    }
+
+    .publicos-home .cards {
+        max-width: 100%;
+    }
+
+    .publicos-home .card {
+        max-width: 100%;
+    }
+
+    .home-impacto,
+    .home-recursos,
+    .sobre-impacto,
+    .sobre-valores,
+    .sobre-cta,
+    .filtros-rapidos,
+    .categoria-hospedagem,
+    .como-funciona {
+        width: 88%;
+    }
+
+    .modal-projeto-conteudo,
+    .modal-conteudo {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.88rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .hero h1,
+    .sobre h1,
+    .projetos-hero h2,
+    .hospedagens-hero-texto h1 {
+        font-size: 1.9rem;
+    }
+
+    .modal-projeto-conteudo,
+    .modal-conteudo {
+        width: 92%;
+        padding: 28px 22px;
     }
 }
