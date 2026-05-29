@@ -3155,3 +3155,25 @@ a {
         padding: 28px 22px;
     }
 }
+
+/* alinha botões dos cards de projetos */
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-detalhes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-detalhes p {
+    flex-grow: 1;
+}
+
+.card-detalhes .button-card {
+    align-self: flex-start;
+    margin-top: auto;
+}
