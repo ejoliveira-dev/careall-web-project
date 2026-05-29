@@ -22,7 +22,7 @@
 ### Seções Implementadas
 - Seção inicial (home).
 - Seção Sobre. 
-- Seção Hospedagens (em desenvolvimento).
+- Seção Hospedagens.
 - Seção Projetos.
 - Seção Contato.
 

@@ -139,3 +139,34 @@ if (paginaHospedagens && inputBuscaHospedagens) {
         botaoBuscaHospedagens.addEventListener("click", ativarModoBusca);
     }
 }
+
+/* carrosel para o mobile - nossa missão & nossa visão */
+
+const carrosselMissaoVisao = document.querySelector(".sobre-missao-visao");
+
+if (carrosselMissaoVisao) {
+    let slideAtualMissao = 0;
+
+    function moverCarrosselMissaoVisao() {
+        if (window.innerWidth > 768) return;
+
+        const slides = carrosselMissaoVisao.querySelectorAll(".sobre-bloco");
+
+        if (slides.length === 0) return;
+
+        slideAtualMissao++;
+
+        if (slideAtualMissao >= slides.length) {
+            slideAtualMissao = 0;
+        }
+
+        const larguraSlide = slides[0].offsetWidth + 18;
+
+        carrosselMissaoVisao.scrollTo({
+            left: larguraSlide * slideAtualMissao,
+            behavior: "smooth"
+        });
+    }
+
+    setInterval(moverCarrosselMissaoVisao, 6000);
+}

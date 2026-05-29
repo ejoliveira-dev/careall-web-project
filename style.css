@@ -512,6 +512,17 @@ footer {
     box-shadow: 0 2px 10px #7b2d2d72;
 }
 
+.sobre-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
 .sobre-content {
     max-width: 700px;
     color: white;
@@ -543,6 +554,303 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 20%;
+}
+
+/* ===== PÁGINA SOBRE ===== */
+
+.sobre-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.sobre-missao-visao,
+.sobre-valores,
+.sobre-impacto,
+.sobre-cta {
+    width: 90%;
+    max-width: 1200px;
+    margin: 90px auto;
+}
+
+.sobre-missao-visao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.sobre-bloco {
+    background: white;
+    border-radius: 26px;
+    padding: 42px;
+    box-shadow: 0 8px 22px rgba(123, 45, 45, 0.10);
+    border: 1px solid rgba(123, 45, 45, 0.08);
+}
+
+.sobre-bloco.destaque {
+    background: #7b2d2d;
+    color: white;
+}
+
+.sobre-bloco.imagem-fundo {
+    background:
+        linear-gradient(rgba(123, 45, 45, 0.86), rgba(215, 93, 92, 0.75)),
+        url("img/casa_interno.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.sobre-bloco h2,
+.sobre-valores h2,
+.sobre-impacto h2,
+.sobre-cta h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.sobre-valores h2,
+.sobre-impacto h2 {
+    color: #7b2d2d;
+    text-align: center;
+}
+
+.sobre-bloco p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.valor-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(123, 45, 45, 0.08);
+    border: 1px solid rgba(123, 45, 45, 0.08);
+    transition: 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(123, 45, 45, 0.14);
+}
+
+.valor-card span {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 18px auto;
+    border-radius: 18px;
+    background: #7b2d2d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.valor-card h3 {
+    color: #7b2d2d;
+    margin-bottom: 14px;
+    font-size: 1.2rem;
+}
+
+.valor-card p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.sobre-impacto {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.impacto-texto {
+    background: white;
+    border-radius: 26px;
+    padding: 42px;
+    box-shadow: 0 8px 22px rgba(123, 45, 45, 0.08);
+}
+
+.impacto-texto h2 {
+    text-align: left;
+    color: #7b2d2d;
+}
+
+.impacto-texto p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+}
+
+.impacto-texto p:last-child {
+    margin-bottom: 0;
+}
+
+.impacto-numeros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.impacto-numeros div {
+    background: #7b2d2d;
+    color: white;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 10px 24px rgba(123, 45, 45, 0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+.impacto-numeros div::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    top: -45px;
+    right: -35px;
+}
+
+.impacto-numeros strong {
+    display: block;
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.impacto-numeros span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.55;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+.sobre-cta {
+    background: linear-gradient(rgba(123, 45, 45, 0.92), rgba(215, 93, 92, 0.85));
+    color: white;
+    border-radius: 30px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(123, 45, 45, 0.16);
+}
+
+.sobre-cta h2 {
+    color: white;
+    margin-bottom: 18px;
+}
+
+.sobre-cta p {
+    max-width: 720px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.sobre-cta a {
+    display: inline-block;
+    background: white;
+    color: #7b2d2d;
+    padding: 14px 30px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.sobre-cta a:hover {
+    transform: translateY(-3px);
+    background: #f8f1f1;
+}
+
+@media (max-width: 768px) {
+    .valores-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .valor-card {
+        padding: 24px 20px;
+    }
+
+    .valor-card span {
+        width: 52px;
+        height: 52px;
+        font-size: 1.4rem;
+    }
+
+    .valor-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .valor-card p {
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    
+}
+
+/* carrosel para o mobile - nossa missão & nossa visão */
+
+@media (max-width: 768px) {
+    .sobre-missao-visao {
+        width: 88%;
+        max-width: 420px;
+        margin: 60px auto;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+        gap: 18px;
+        padding-bottom: 12px;
+    }
+
+    .sobre-missao-visao::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sobre-missao-visao .sobre-bloco {
+        min-width: 100%;
+        scroll-snap-align: center;
+        padding: 30px 24px;
+        min-height: 260px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sobre-missao-visao .sobre-bloco h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-missao-visao .sobre-bloco p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
 }
 
 .contato {
@@ -2088,5 +2396,57 @@ body.dark .hospedagens-hero-texto p {
     #typing-text {
         min-height: 2.8em;
         margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-impacto {
+        display: flex;
+        flex-direction: column;
+        width: 88%;
+        margin: 60px auto;
+        gap: 34px;
+    }
+
+    .impacto-texto {
+        width: 100%;
+        padding: 30px 24px;
+        box-sizing: border-box;
+        margin-bottom: 6px;
+    }
+
+    .impacto-texto h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .impacto-texto p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        text-align: left;
+    }
+
+    .impacto-numeros {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .impacto-numeros div {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 26px 24px;
+        border-radius: 24px;
+    }
+
+    .impacto-numeros strong {
+        font-size: 1.35rem;
+    }
+
+    .impacto-numeros span {
+        font-size: 0.95rem;
     }
 }
