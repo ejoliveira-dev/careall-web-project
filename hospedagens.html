@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="pagina-hospedagens">
 
   <header>
     <a href="index.html">
@@ -19,7 +19,7 @@
 
     <nav>
       <a href="sobre.html">Sobre</a>
-      <a href="sobre.html">Hospedagens</a>
+      <a href="hospedagens.html">Hospedagens</a>
       <a href="projetos.html">Projetos</a>
       <a href="contato.html">Contato</a>
     </nav>
@@ -39,10 +39,486 @@
       <button id="toggle-theme">Dark/Light</button>
       <a href="#">Sair</a>
     </div>
-    
+
   </header>
 
   <main>
+
+    <section class="hospedagens-hero">
+
+      <div class="hospedagens-hero-texto">
+
+        <h1>Encontre hospedagem com acolhimento e segurança</h1>
+        <p>Consulte opções seguras e acolhedoras para pacientes e acompanhantes que precisam estar próximos a hospitais,
+          clínicas e centros médicos.</p>
+
+      </div>
+
+    </section>
+
+    <section class="busca-hospedagens" aria-label="Busca de hospedagens">
+      <div class="busca-box">
+
+        <input type="text" placeholder="Buscar por cidade, bairro ou hospital"
+          aria-label="Buscar hospedagem por cidade, bairro ou hospital">
+
+        <button type="button">Buscar</button>
+      </div>
+    </section>
+
+    <section class="estado-busca" id="estado-busca">
+      <h2>Busque uma hospedagem</h2>
+      <p>Digite uma cidade, bairro ou hospital para encontrar opções de acolhimento próximas.</p>
+    </section>
+
+    <div class="conteudo-hospedagens">
+
+      <section class="como-funciona">
+        <h2>Como funciona?</h2>
+
+        <div class="como-grid">
+
+          <div class="como-card">
+            <h3>1. Busque</h3>
+            <p>Pesquise hospedagens disponíveis de acordo com sua necessidade, localização ou hospital de referência.
+            </p>
+          </div>
+
+          <div class="como-card">
+            <h3>2. Escolha</h3>
+            <p>Visualize informações sobre cada local, estrutura, acolhimento,
+              proximidade e tipo de acomodação oferecida.</p>
+          </div>
+
+          <div class="como-card">
+            <h3>3. Solicite apoio</h3>
+            <p>Entre em contato com a rede ou parceiro responsável para receber orientação e iniciar o processo de
+              acolhimento.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="filtros-rapidos" aria-label="Filtros rápidos de hospedagem">
+
+        <h2>Escolha o tipo de hospedagem</h2>
+
+        <div class="filtros-grid">
+
+          <a href="#hospedagem-solo" class="filtro-card">
+            <span><img src="img/hospedagens-icones/pessoa-paciente.png" alt=""></span>
+            <strong>Individual</strong>
+          </a>
+
+          <a href="#hospedagem-familia" class="filtro-card">
+            <span><img src="img/hospedagens-icones/acompanhante.png" alt=""></span>
+            <strong>Família</strong>
+          </a>
+
+          <a href="#hospedagem-acessivel" class="filtro-card">
+            <span><img src="img/hospedagens-icones/acessibilidade.png" alt=""></span>
+            <strong>Acessível</strong>
+          </a>
+
+          <a href="#hospedagem-comunitaria" class="filtro-card">
+            <span><img src="img/hospedagens-icones/comunitario.png" alt=""></span>
+            <strong>Comunitária</strong>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="categoria-hospedagem" id="hospedagem-solo">
+        <div class="secao-titulo">
+          <h2>Hospedagens individuais</h2>
+          <p>
+            Opções indicadas para pacientes ou acompanhantes que precisam de um espaço mais reservado, tranquilo e
+            adequado para descanso durante a permanência próxima aos centros médicos.
+          </p>
+        </div>
+
+        <div class="hospedagens-scroll">
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/individual/quarto-1.jpg" alt="Quarto individual simples com cama e janela">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Individual</span>
+              <h3>Quarto Sereno</h3>
+              <p>
+                Espaço reservado para descanso individual, ideal para quem busca silêncio, privacidade e conforto entre
+                consultas, exames ou procedimentos.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próximo ao IMIP</span>
+                <span>🛏️ Acomodação individual</span>
+                <span>🌙 Ambiente reservado</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/individual/quarto-2.jpg"
+              alt="Quarto individual com iluminação aconchegante">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Individual</span>
+              <h3>Espaço Acolher</h3>
+              <p>
+                Hospedagem simples e segura para pacientes ou acompanhantes que viajam sozinhos e precisam ficar
+                próximos a centros médicos.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próximo ao Hospital Português</span>
+                <span>🛏️ Acomodação individual</span>
+                <span>🌙 Espaço tranquilo</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/individual/quarto-3.jpg"
+              alt="Quarto individual com iluminação aconchegante">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Individual</span>
+              <h3>Lar Provisório</h3>
+              <p>
+                Opção voltada para estadias curtas, com acolhimento básico e localização estratégica para quem precisa
+                se deslocar com frequência.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próximo ao Hospital das Clínicas</span>
+                <span>⏳ Estadia temporária</span>
+                <span>💜 Rede parceira</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/individual/quarto-4.jpg"
+              alt="Quarto individual com cama e área compacta de apoio">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Individual</span>
+              <h3>Estadia Tranquila</h3>
+              <p>
+                pção indicada para quem precisa de um local simples, calmo e próximo à rotina de consultas, exames e
+                acompanhamentos médicos.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Região central do Recife</span>
+                <span>🛏️ Acomodação individual</span>
+                <span>🧳 Estadia curta ou média</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="categoria-hospedagem" id="hospedagem-familia">
+        <div class="secao-titulo">
+          <h2>Hospedagens para família</h2>
+          <p>
+            Espaços voltados para pacientes acompanhados por familiares ou entes queridos, oferecendo mais conforto,
+            segurança e acolhimento durante a permanência.
+          </p>
+        </div>
+
+        <div class="hospedagens-scroll">
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/familia/casa-familia-1.png"
+              alt="Ambiente familiar de hospedagem com sala e cozinha">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Família</span>
+              <h3>Casa Florença</h3>
+              <p>
+                Ambiente familiar preparado para receber pacientes e acompanhantes, com espaço acolhedor para descanso,
+                convivência e apoio durante a estadia.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao IMIP</span>
+                <span>👥 Até 3 pessoas</span>
+                <span>🏠 Ambiente familiar</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/familia/casa-familia-2.jpg" alt="Quarto familiar simples e organizado">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Família</span>
+              <h3>Lar de Apoio Familiar</h3>
+              <p>
+                Quarto organizado para receber pacientes acompanhados por familiares ou entes queridos, oferecendo um
+                ambiente simples, seguro e acolhedor durante a estadia.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próximo ao Hospital Português</span>
+                <span>👥 Paciente + acompanhante</span>
+                <span>🏠 Ambiente familiar</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/familia/casa-familia-3.jpg"
+              alt="Sala de convivência em hospedagem familiar">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Família</span>
+              <h3>Casa Esperança</h3>
+              <p>
+                Espaço pensado para pacientes acompanhados por familiares, priorizando acolhimento, proximidade com
+                hospitais e permanência segura.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital Português</span>
+                <span>👥 Paciente + acompanhante</span>
+                <span>💜 Acolhimento humanizado</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/familia/casa-familia- 4.jpg" alt="Quarto familiar claro e acolhedor">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Família</span>
+              <h3>Espaço Laços</h3>
+              <p>
+                Hospedagem voltada para pacientes acompanhados por familiares ou entes queridos, oferecendo apoio,
+                conforto e um ambiente tranquilo durante a estadia.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital Oswaldo Cruz</span>
+                <span>👥 Até 4 pessoas</span>
+                <span>🏠 Estadia familiar</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="categoria-hospedagem" id="hospedagem-acessivel">
+        <div class="secao-titulo">
+          <h2>Hospedagens com acessibilidade</h2>
+          <p>Locais pensados para oferecer mais segurança, mobilidade e conforto a pacientes, acompanhantes ou
+            familiares que precisam de estrutura acessível durante a estadia.</p>
+        </div>
+
+        <div class="hospedagens-scroll">
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/acessibilidade/acessivel-1.jpg"
+              alt="Ambiente adaptado com cadeira de rodas e espaço de apoio">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Adaptada</span>
+              <h3>Casa Acesso</h3>
+              <p>Espaço com estrutura adaptada para pessoas com mobilidade reduzida, oferecendo mais segurança e
+                conforto durante a estadia.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital das Clínicas</span>
+                <span>♿ Estrutura acessível</span>
+                <span>🚪 Circulação facilitada</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/acessibilidade/acessivel-2.jpg"
+              alt="Banheiro adaptado com barras de apoio e assento">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Adaptada</span>
+              <h3>Espaço Lua Nova</h3>
+              <p>Hospedagem indicada para pacientes ou acompanhantes que precisam de um ambiente mais prático, seguro e
+                fácil de circular.</p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao IMIP</span>
+                <span>♿ Mobilidade reduzida</span>
+                <span>🧭 Fácil acesso</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/acessibilidade/acessivel-3.jpg"
+              alt="Cozinha adaptada com bancada ampla e espaço de circulação">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Adaptada</span>
+              <h3>Lar Bittencourt</h3>
+              <p>Residência pensada para acolher pessoas que necessitam de apoio na locomoção, mantendo conforto e
+                proximidade com centros médicos.</p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital Português</span>
+                <span>👥 Paciente + acompanhante</span>
+                <span>♿ Ambiente adaptado</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/acessibilidade/acessivel-4.jpg"
+              alt="Quarto amplo com cama, barras de apoio e espaço de circulação">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Adaptada</span>
+              <h3>Casa Cuidado Livre</h3>
+              <p>Ambiente voltado para quem busca uma estadia mais confortável, com atenção à segurança, mobilidade e
+                acolhimento.</p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital Oswaldo Cruz</span>
+                <span>♿ Acesso facilitado</span>
+                <span>💜 Acolhimento seguro</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="categoria-hospedagem" id="hospedagem-comunitaria">
+        <div class="secao-titulo">
+          <h2>Hospedagens comunitárias</h2>
+          <p>Opções compartilhadas para mais de uma família, organizadas com apoio da rede solidária e pensadas para
+            acolher pessoas que vivem situações semelhantes.</p>
+        </div>
+
+        <div class="hospedagens-scroll">
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/comunitario/sala-compartilhada-1.jpg" alt="Sala de convivência em casa comunitária">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Comunitária</span>
+              <h3>Casa Aurora</h3>
+              <p>
+                Espaço compartilhado pensado para acolher pacientes, acompanhantes e familiares que precisam permanecer
+                próximos aos centros médicos.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital Português</span>
+                <span>👥 Convivência organizada</span>
+                <span>🤝 Apoio solidário</span>
+              </div>
+
+              <button class="button-card" type="button">Conhecer rede</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/comunitario/sala-compartilhada-2.jpg" alt="Ambiente amplo de casa comunitária com sala e cozinha">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Comunitária</span>
+              <h3>Casarão São Miguel</h3>
+              <p>
+                Hospedagem coletiva para famílias em situação de deslocamento, oferecendo acolhimento, segurança e apoio
+                durante a estadia.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital das Clínicas</span>
+                <span>🏠 Ambiente coletivo</span>
+                <span>💜 Rede parceira</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/comunitario/sala-compartilhada-3.jpg" alt="Área compartilhada com mesa e espaço de apoio">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Comunitária</span>
+              <h3>Espaço Boa Vista</h3>
+              <p>
+                Local voltado para o acolhimento de mais de uma família, com espaços de convivência e apoio para a
+                permanência durante o tratamento.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital Oswaldo Cruz</span>
+                <span>👥 Mais de uma família</span>
+                <span>🤝 Apoio comunitário</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+          <article class="hospedagem-card-horizontal">
+            <img src="img/hospedagens-icones/comunitario/sala-compartilhada-4.jpg" alt="Sala compartilhada com puffs e espaço de convivência">
+
+            <div class="hospedagem-info">
+              <span class="tipo-hospedagem">Comunitária</span>
+              <h3>Morada Pedrosa</h3>
+              <p>
+                Opção compartilhada para famílias e acompanhantes que buscam acolhimento,
+                segurança e apoio durante a estadia.
+              </p>
+
+              <div class="hospedagem-detalhes">
+                <span>📍 Próxima ao Hospital Português</span>
+                <span>👥 Famílias acolhidas</span>
+                <span>🤝 Apoio solidário</span>
+              </div>
+
+              <button class="button-card" type="button">Ver detalhes</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
 
   </main>
 

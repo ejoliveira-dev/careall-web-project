@@ -112,3 +112,30 @@ if (toggleTheme) {
         }
     });
 }
+
+// ESCONDENDO CONTEÚDO ABAIXO DA BARRA DE PESQUISA AO BUSCAR HOSPEDAGENS.
+
+const paginaHospedagens = document.querySelector(".pagina-hospedagens");
+const inputBuscaHospedagens = document.querySelector(".busca-box input");
+const botaoBuscaHospedagens = document.querySelector(".busca-box button");
+
+if (paginaHospedagens && inputBuscaHospedagens) {
+
+    function ativarModoBusca() {
+        paginaHospedagens.classList.add("modo-busca");
+    }
+
+    function verificarBuscaVazia() {
+        if (inputBuscaHospedagens.value.trim() === "") {
+            paginaHospedagens.classList.remove("modo-busca");
+        }
+    }
+
+    inputBuscaHospedagens.addEventListener("focus", ativarModoBusca);
+    inputBuscaHospedagens.addEventListener("input", ativarModoBusca);
+    inputBuscaHospedagens.addEventListener("blur", verificarBuscaVazia);
+
+    if (botaoBuscaHospedagens) {
+        botaoBuscaHospedagens.addEventListener("click", ativarModoBusca);
+    }
+}
