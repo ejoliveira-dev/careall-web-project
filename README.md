@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="img/logo.png" width="300">
+</p>
+
 # Care.All Web Project
 
   Repositório do projeto acadêmico de desenvolvimento web da empresa fictícia Care.All, utilizando HTML, CSS e JavaScript.
